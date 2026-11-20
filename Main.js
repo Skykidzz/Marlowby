@@ -46,6 +46,10 @@ for(var i = 0; i < h; i += 1) {
 
 function draw() {
 	//reciveInfo()
+	if(thin[2] == 0) {
+		thin[1] = 1
+		thin[2] = 1
+	}
 	strokeWeight(1 * size[0])
 	strokeJoin(ROUND)
 	delh = deltaTime / 20;

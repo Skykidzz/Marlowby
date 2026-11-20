@@ -1,7 +1,7 @@
 var trans = [0,0,0,0,0]
 var inpb = []
 var gt = ["", 0]
-var thin = [0]
+var thin = [0, 0, 0]
 
 function loadPage(p, t) {
 	ps = [ss[2], ss[1]]
