@@ -20,7 +20,7 @@ function preload() {
 function setup() {
 	// [Background, Misc A, Misc B,  Nav bar, Text]
 	cosc = [color(0,0,0), color(30,30,30), color(0,0,0,60), color(50,50,50, 200), color(255,255,255)]
-	createWindow(window.innerWidth, 1800)
+	createWindow(400, 1800)
 	//sendInfo({pack: "remacc", usern: 0}, false)
 	ScreenCorrection();
 	loadPage(0, 0);

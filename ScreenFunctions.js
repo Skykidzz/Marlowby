@@ -3,6 +3,15 @@ var oss = [0,0];
 var size = [];
 var ps = [];
 
+function getScreen() {
+	let sw = window.screen.width;
+	let sh = window.screen.height;
+	if ((window.innerWidth > window.innerHeight) !== (sw > sh)) {
+		return [sh, sw];
+	}
+	return [sw, sh];
+}
+
 var ScreenCorrection = function () {
 	if(window.innerWidth !== oss[0] || window.innerHeight !== oss[1] || thin[1] == 1) {
 		reshapewin(window.innerWidth, window.innerHeight)
@@ -36,7 +45,7 @@ function createWindow(w,h) {
 createCanvas(w, h);
 ps = [w,h];
 oss = [w, h]
-ss = [w, h,  window.screen.width,window.screen.height];
+ss = [w, h,  getScreen()[0],getScreen()[1]];
 }
 function GCD(x, y) {
     while (y !== 0) {
