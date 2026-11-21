@@ -1,4 +1,4 @@
-const SERVER_URL = "https://65.31.106.3:25565";
+const SERVER_URL = "marlowbyshop.com";
 
 async function sendInfo(payload, waitForReply) {
   const response = await fetch(`${SERVER_URL}/api/send`, {
